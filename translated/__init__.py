@@ -1,0 +1,1 @@
+from .tprint import tprint; from .aprint import aprint

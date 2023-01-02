@@ -4,7 +4,7 @@ def tprint(*values, sep: Optional[str] = ' ', end: Optional[str] = '\n', File = 
   The threading version of print
   '''
   sep = str(sep); e: str = ''
-  for i in values: e += str(i) + sep
+  for i in values: e += sep + str(i)
   e += end
   if flush is False:
     def write():

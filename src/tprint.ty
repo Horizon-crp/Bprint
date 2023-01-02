@@ -8,7 +8,7 @@ def tprint(*values, sep: Optional[str] = ' ', end: Optional[str] = '\n', File = 
   sep = str(sep)
   e: str = ''
   for i in values {
-    e += str(i) + sep
+    e += sep + str(i)
   }
   e += end
   if flush is False {

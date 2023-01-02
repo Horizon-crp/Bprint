@@ -4,7 +4,7 @@ async def aprint(*values, sep: Optional[str] = ' ', end: Optional[str] = '\n', F
   The async version of tprint (works with threading too)
   '''
   sep = str(sep); e: str = ''
-  for i in values: e += str(i) + sep
+  for i in values: e += sep + str(i)
   e += end
   if flush is False:
     def write():
